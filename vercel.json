@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/raphaelsaru", "destination": "/raphaelsaru/index.html" }
+  ]
+}
