@@ -1,0 +1,299 @@
+/* Modern UI/UX improvements inspired by Brooks Portfolio - Minimalist Neutral Palette */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f6f6f3;
+    min-height: 100vh;
+    color: #222;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 48px auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.08);
+    overflow: hidden;
+    padding: 0 0 48px 0;
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 16px 48px rgba(44, 62, 80, 0.12);
+}
+
+.header {
+    background: #fff;
+    color: #222;
+    padding: 56px 32px 32px 32px;
+    text-align: left;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.04);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.name {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+    letter-spacing: 0.5px;
+}
+
+.title {
+    font-size: 1.3em;
+    opacity: 0.85;
+    margin-bottom: 24px;
+    font-weight: 500;
+    color: #444;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 18px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #f6f6f3;
+    padding: 8px 18px;
+    border-radius: 24px;
+    font-weight: 500;
+    font-size: 1em;
+    color: #222;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+    transition: background 0.2s;
+}
+
+.contact-item:hover {
+    background: #ececec;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 40px 40px 0 40px;
+}
+
+.section {
+    margin-bottom: 32px;
+}
+
+.section-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ececec;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #f59e42;
+    border-radius: 2px;
+}
+
+.objective {
+    background: #f6f6f3;
+    padding: 28px;
+    border-radius: 14px;
+    border-left: 5px solid #222;
+    margin: 40px 40px 32px 40px;
+    grid-column: 1 / -1;
+    box-shadow: 0 1px 8px rgba(44,62,80,0.04);
+}
+
+.objective p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #222;
+    text-align: justify;
+}
+
+.experience-item, .course-item {
+    background: #f6f6f3;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    border-left: 4px solid #222;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+}
+
+.experience-item:hover, .course-item:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+}
+
+.company-name, .course-name {
+    font-weight: 700;
+    color: #222;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.position, .course-details {
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.period {
+    background: #f59e42;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.skill-category {
+    background: #fff;
+    color: #222;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+    border: 1px solid #ececec;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.skill-category:hover {
+    box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+    transform: scale(1.01);
+}
+
+.skill-category h4 {
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.skill-category p {
+    font-size: 0.95em;
+    opacity: 0.92;
+}
+
+.education-item {
+    background: #f6f6f3;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid #f59e42;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+}
+
+.school-name {
+    font-weight: 700;
+    color: #222;
+    font-family: 'Inter', sans-serif;
+}
+
+.degree {
+    color: #666;
+    font-size: 0.95em;
+}
+
+/* Button styles for minimalist UI */
+.button {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    padding: 10px 28px;
+    border-radius: 24px;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.button:hover {
+    background: #444;
+    transform: scale(1.03);
+    box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin: 16px;
+        padding: 0 0 24px 0;
+    }
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px 8px 0 8px;
+    }
+    .objective {
+        margin: 16px 4px 16px 4px;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .header {
+        padding: 24px 4px 12px 4px;
+        border-radius: 0;
+    }
+    .main-content {
+        padding: 8px 2px 0 2px;
+        gap: 10px;
+    }
+    .objective {
+        margin: 8px 2px 8px 2px;
+        padding: 10px;
+    }
+}
