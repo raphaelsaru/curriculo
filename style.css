@@ -262,6 +262,37 @@ body {
     box-shadow: 0 4px 16px rgba(44,62,80,0.08);
 }
 
+.whatsapp-btn {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25d366;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 24px;
+    padding: 8px 20px;
+    text-decoration: none;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.whatsapp-link:hover {
+    background: #1ebe57;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.08);
+    transform: scale(1.03);
+}
+
+.whatsapp-icon {
+    width: 18px;
+    height: 18px;
+    filter: none;
+}
+
 @media (max-width: 900px) {
     .container {
         margin: 16px;
