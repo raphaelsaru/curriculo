@@ -1,5 +1,15 @@
 {
+  "redirects": [
+    {
+      "source": "/raphaelsaru",
+      "destination": "/raphaelsaru/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/raphaelsaru", "destination": "/raphaelsaru/index.html" }
+    {
+      "source": "/raphaelsaru/",
+      "destination": "/raphaelsaru/index.html"
+    }
   ]
 }
